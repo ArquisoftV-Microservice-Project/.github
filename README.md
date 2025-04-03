@@ -1,1 +1,2 @@
-
+#ArquisoftV Microservice Project
+A **microservices-based application** deployed on **Azure Kubernetes Service (AKS)**, following best practices in **IaC (Terraform)**, **CI/CD (GitHub Actions/Azure DevOps)**, **automation**, and **observability**. The stack includes **Angular, Node.js, Spring Boot, Go, PostgreSQL, Redis, and NGINX**, with **Prometheus and Grafana** for monitoring. The deployment is automated using **Terraform, Docker, and Kubernetes**, ensuring scalability, security, and maintainability. 🚀
