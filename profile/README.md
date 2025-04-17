@@ -29,25 +29,25 @@ Deployed in an **AKS (Azure Kubernetes Service)** cluster with **NGINX Ingress C
 
 | Category | Tools/Technologies |
 | --- | --- |
-| **Cloud** | Azure |
-| **Kubernetes** | AKS (Azure Kubernetes Service) |
+| **Cloud** | GCP |
+| **Kubernetes** | GKE (Google Kubernetes Engine) |
 | **IaC** | Terraform |
-| **CI/CD** | GitHub Actions / Azure DevOps |
+| **CI/CD** | GitHub Actions - Jenkins |
 | **Containerization** | Docker |
 | **Ingress Controller** | NGINX Ingress |
 | **Monitoring & Logging** | Prometheus, Grafana |
-| **Secrets Management** | Azure Key Vault |
+| **Secrets Management** | GitHub Secrets |
 
 ---
 
 ## **Deployment Workflow**
 
 1. **Infrastructure Setup (IaC)**
-    - Use **Terraform** to provision AKS, networking, and databases.
-    - Secure configurations with **Azure Key Vault**.
+    - Use **Terraform** to provision GKE, networking, and databases.
+    - Secure configurations with **GitHub Secrets**.
 2. **Containerization & CI/CD**
-    - **Build & push Docker images** to **Azure Container Registry (ACR)**.
-    - Use **GitHub Actions / Azure DevOps** to deploy workloads.
+    - **Build & push Docker images** to **google artifact registry repository**.
+    - Use **GitHub Actions** to deploy workloads.
 3. **Kubernetes Deployment**
     - Set up **Ingress & Service Mesh**.
     - Configure **autoscaling & security policies**.
