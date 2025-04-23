@@ -54,3 +54,54 @@ Deployed in an **AKS (Azure Kubernetes Service)** cluster with **NGINX Ingress C
 4. **Observability & Security**
     - Monitor logs with **Prometheus, Grafana**.
     - Implement **Network Policies**.
+---
+
+## 🚀 Release Notes – GKE Microservices Platform `v1.0.0`
+
+📅 **Fecha:** 2025-04-23  
+🌐 **Cluster:** GKE con infraestructura automatizada vía Terraform  
+🔒 **Enfoque:** Seguridad, escalabilidad y calidad continua
+
+---
+
+### 🧩 Arquitectura y Namespace Design
+
+- **Namespaces implementados:**
+  - `frontend`: apps de cara al usuario
+  - `backend`: lógica de negocio
+  - `database`: servicios de persistencia
+  - `monitoring`: observabilidad (Prometheus, Grafana, Sonar)
+
+- **Ingress NGINX** configurado para:
+  - Exponer solo los servicios necesarios públicamente
+  - Aplicar reglas de seguridad y routing centralizado
+
+---
+
+### ⚙️ CI/CD + Calidad de Código
+
+- **Terraform** para provisión del cluster y recursos
+- **GitHub Actions** con workflows para:
+  - Construcción y push de imagenes a registry privado     
+  - Deploy automático al actualizar imagenes
+  - Tests y análisis estático con **SonarQube**
+
+---
+
+### 🔍 Observabilidad y Seguridad
+
+- Stack de monitoreo: Prometheus + Grafana
+- Seguridad:
+  - Workload Identity
+  - Secrets gestionados con GitHub secrets
+  - Network Policies activadas
+
+---
+
+### 📈 Escalabilidad
+
+- Node pools por tipo de servicio
+- Load Balancer a nivel de cluster habilitado
+
+---
+
