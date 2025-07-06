@@ -1,4 +1,4 @@
-# **Microservices Application Deployment on Kubernetes (Azure) - README**
+# **Microservices Application Deployment on Kubernetes**
 
 ## **Overview**
 
@@ -110,5 +110,3 @@ Deployed in an **AKS (Azure Kubernetes Service)** cluster with **NGINX Ingress C
 * Cluster-level Load Balancer enabled
 
 ---
-
-Let me know if you’d like this adapted for the actual Azure setup (since parts still mention GCP/GKE).
